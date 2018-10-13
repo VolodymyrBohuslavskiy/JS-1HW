@@ -1,0 +1,19 @@
+.fild {
+    background: #ff2509;
+    height: 150px;
+    width:150px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.inp{
+
+    background: #ff8b44;
+    height: 300px;
+    width:300px;
+    margin: auto;
+}
+.one{
+    margin-left: 20%;
+    margin-top: 40px;
+}
