@@ -151,6 +151,156 @@ if (she = prinzSor) console.log(she);*/
 
 
 
+// —оздаем свои методы map, filter, foreach
+// дл¤ класса Array, добовл¤¤ их через prototype
+
+class Car {
+    constructor(brand, model, year, color, type, engenModel, engenMas, power) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+        this.color = color;
+        this.type = type;
+        this.engenModel = engenModel;
+        this.engenMas = engenMas;
+        this.power = power;
+    }
+}
+
+
+let cars = [
+    new Car("subaru", "wrx", 2010, "blue", "sedan", "ej204x", 2, 400),
+    new Car("subaru", "legacy", 2007, "silver", "sedan", "ez30", 3, 250),
+    new Car("subaru", "tribeca", 2011, "white", "jeep", "ej20", 2, 300),
+    new Car("subaru", "leone", 1998, "yellow", "sedan", "ez20x", 2, 140),
+    new Car("subaru", "impreza", 2014, "red", "sedan", "ej204x", 2, 200),
+    new Car("subaru", "outback", 2014, "red", "hachback", "ej204", 2, 165),
+    new Car("bmw", "115", 2013, "red", "hachback", "f15", 1.5, 120),
+    new Car("bmw", "315", 2010, "white", "sedan", "f15", 1.5, 120),
+    new Car("bmw", "650", 2009, "black", "coupe", "f60", 6, 350),
+    new Car("bmw", "320", 2012, "red", "sedan", "f20", 2, 180),
+    new Car("mercedes", "e200", 1990, "silver", "sedan", "eng200", 2, 180),
+    new Car("mercedes", "e6.3", 2017, "yellow", "sedan", "amg6.3", 6, 400),
+    new Car("mercedes", "c250", 2017, "red", "sedan", "eng25", 2.5, 230)
+];
+// двигун більше 3х літрів
+
+// for (let i = 0; i < cars.length; i++) {
+//     let obj = cars[i];
+//     if (obj.engenMas > 3) console.log(obj);
+// }
+
+
+    // двигун  двигун = 2л
+/*
+for (let i = 0; i < cars.length; i++) {
+    let obj = cars[i];
+     if (obj.engenMas==2)console.log(obj)
+}
+*/
+
+// виробник мерс
+/*for (let i = 0; i < cars.length; i++) {
+    let obj = cars[i];
+    if (obj.brand=="mercedes")console.log(obj)
+}*/
+
+
+// двигун більше 3х літрів + виробник мерседес
+/*for (let i = 0; i < cars.length; i++) {
+    let obj = cars[i];
+    if (obj.engenMas > 3 && obj.brand=="mercedes")console.log(obj)
+}*/
+
+
+// двигун більше 3х літрів + виробник субару
+/*for (let i = 0; i < cars.length; i++) {
+    let obj = cars[i];
+    if (obj.engenMas >= 3 && obj.brand=="subaru")console.log(obj)
+}*/
+
+// сили більше ніж 300
+/*
+for (let i = 0; i < cars.length; i++) {
+    let obj = cars[i];
+    if (obj.power > 300)console.log(obj)
+}
+*/
+
+// сили більше ніж 300 + виробник субару
+/*
+for (let i = 0; i < cars.length; i++) {
+    let obj = cars[i];
+    if (obj.power > 300 && obj.brand=="subaru")console.log(obj)
+}
+
+*/
+
+// мотор серіі ej
+// сили більше ніж 300 + виробник субару + мотор серіі ej
+
+// двигун меньше 3х літрів + виробник мерседес
+/*
+for (let i = 0; i < cars.length; i++) {
+    let obj = cars[i];
+    if (obj.engenMas < 3 && obj.brand=="mercedes")console.log(obj)}
+*/
+
+// двигун більше 2л + сили більше 250
+/*
+for (let i = 0; i < cars.length; i++) {
+    let obj = cars[i];
+    if (obj.engenMas > 2 && obj.power>=250) console.log(obj)}
+*/
+
+
+// сили більше 250  + виробник бмв
+/*for (let i = 0; i < cars.length; i++) {
+    let obj = cars[i];
+    if (obj.brand=='bmw' && obj.power>=250) console.log(obj)}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
