@@ -1,3 +1,10 @@
+// 1. Створити масив об'єктів які характеризують теги HTML , в об'єктах повинні бути присутні
+// -назва тегу
+// - опис його дій
+// - масив з атрибутами
+// -опис дії атрибуту
+// Кожен атрибут описати як окремий який буде містити
+// -назву атрибуту
 /*
  let tag_a =
  {
@@ -86,25 +93,77 @@
  ;
  console.log(tag_a, tag_div, tag_h1, tag_span, tag_input, tag_from, tag_option, tag_select);*/
 
-function Cars(brand, model, year, status) {
-    this.brand = brand;
-    this.model = model;
-    this.year = year;
-    this.status = status;
-    /**
-     * @return {string}
-     */
-    this.Drive = function () {
-        return `This car is ${this.brand} ${this.model} of ${this.year} year, car on ${this.status} status. `
-    }
+// Создать функцию-конструктор для машины
+// 3 -5 параметров
+// функцию drive(){
+//     // this - обязателен!!!!
+// }
+// создаешь объект
+// превращаешь его в JSON и потом обратно в объект
+// создаешь еще одну машину, и применяешь ее метод драйв к 1у объекту
+//Canstructor cars
+/*
+ function Cars(brand, model, year, status) {
+ this.brand = brand;
+ this.model = model;
+ this.year = year;
+ this.status = status;
+ /!**
+ * @return {string}
+ *!/
+ this.Drive = function () {
+ return `This car is ${this.brand} ${this.model} of ${this.year} year, car on ${this.status} status. `
+ }
+ }
+ let Car_1 = new Cars('Audi', "A7", 2013, true);
+
+ let car_1json=JSON.stringify(Car_1);
+ console.log(car_1json);
+
+ let car_1parse = JSON.parse(car_1json);
+ console.log(car_1parse);
+
+ let Car_2 = new Cars('Ford', "Raptor", 2017, true);
+ console.log(Car_2.Drive());*/
+
+// Протокол пошуку попелюшки
+// Створити 10 попелюшок з полями ім'я, вік, розмір ноги
+// Сторити об'єкт "принц" який має поля ім'я, вік, туфелька яку він знайшов.
+//     Знайти яка попелюшка його)
+
+/*let pop = [
+    {name: 'Nastya', age: 25, legsize: 42},
+    {name: 'Ira', age: 18, legsize: 39},
+    {name: 'Marianna', age: 22, legsize: 38},
+    {name: 'Ann', age: 21, legsize: 40},
+    {name: 'Jane', age: 40, legsize: 45},
+    {name: 'Maria', age: 24, legsize: 42},
+    {name: 'Taya', age: 22, legsize: 38},
+    {name: 'Ksenia', age: 21, legsize: 40},
+    {name: 'Uliana', age: 18, legsize: 39},
+    {name: 'Sofia', age: 18, legsize: 39}
+];
+for (let she of pop) {
 }
-let Car_1 = new Cars('Audi', "A7", 2013, true);
+let prinzSor = {name: 'Sofia', age: 18, legsize: 39};
+if (she = prinzSor) console.log(she);*/
 
-let car_1json=JSON.stringify(Car_1);
-console.log(car_1json);
 
-let car_1parse = JSON.parse(car_1json);
-console.log(car_1parse);
 
-let Car_2 = new Cars('Ford', "Raptor", 2017, true);
-console.log(Car_2.Drive());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
