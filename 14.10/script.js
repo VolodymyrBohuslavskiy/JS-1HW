@@ -132,21 +132,21 @@
 //     Знайти яка попелюшка його)
 
 /*let pop = [
-    {name: 'Nastya', age: 25, legsize: 42},
-    {name: 'Ira', age: 18, legsize: 39},
-    {name: 'Marianna', age: 22, legsize: 38},
-    {name: 'Ann', age: 21, legsize: 40},
-    {name: 'Jane', age: 40, legsize: 45},
-    {name: 'Maria', age: 24, legsize: 42},
-    {name: 'Taya', age: 22, legsize: 38},
-    {name: 'Ksenia', age: 21, legsize: 40},
-    {name: 'Uliana', age: 18, legsize: 39},
-    {name: 'Sofia', age: 18, legsize: 39}
-];
-for (let she of pop) {
-}
-let prinzSor = {name: 'Sofia', age: 18, legsize: 39};
-if (she = prinzSor) console.log(she);*/
+ {name: 'Nastya', age: 25, legsize: 42},
+ {name: 'Ira', age: 18, legsize: 39},
+ {name: 'Marianna', age: 22, legsize: 38},
+ {name: 'Ann', age: 21, legsize: 40},
+ {name: 'Jane', age: 40, legsize: 45},
+ {name: 'Maria', age: 24, legsize: 42},
+ {name: 'Taya', age: 22, legsize: 38},
+ {name: 'Ksenia', age: 21, legsize: 40},
+ {name: 'Uliana', age: 18, legsize: 39},
+ {name: 'Sofia', age: 18, legsize: 39}
+ ];
+ for (let she of pop) {
+ }
+ let prinzSor = {name: 'Sofia', age: 18, legsize: 39};
+ if (she = prinzSor) console.log(she);*/
 
 
 
@@ -191,80 +191,169 @@ let cars = [
 // }
 
 
-    // двигун  двигун = 2л
+// двигун  двигун = 2л
 /*
-for (let i = 0; i < cars.length; i++) {
-    let obj = cars[i];
-     if (obj.engenMas==2)console.log(obj)
-}
-*/
+ for (let i = 0; i < cars.length; i++) {
+ let obj = cars[i];
+ if (obj.engenMas==2)console.log(obj)
+ }
+ */
 
 // виробник мерс
 /*for (let i = 0; i < cars.length; i++) {
-    let obj = cars[i];
-    if (obj.brand=="mercedes")console.log(obj)
-}*/
+ let obj = cars[i];
+ if (obj.brand=="mercedes")console.log(obj)
+ }*/
 
 
 // двигун більше 3х літрів + виробник мерседес
 /*for (let i = 0; i < cars.length; i++) {
-    let obj = cars[i];
-    if (obj.engenMas > 3 && obj.brand=="mercedes")console.log(obj)
-}*/
+ let obj = cars[i];
+ if (obj.engenMas > 3 && obj.brand=="mercedes")console.log(obj)
+ }*/
 
 
 // двигун більше 3х літрів + виробник субару
 /*for (let i = 0; i < cars.length; i++) {
-    let obj = cars[i];
-    if (obj.engenMas >= 3 && obj.brand=="subaru")console.log(obj)
-}*/
+ let obj = cars[i];
+ if (obj.engenMas >= 3 && obj.brand=="subaru")console.log(obj)
+ }*/
 
 // сили більше ніж 300
 /*
-for (let i = 0; i < cars.length; i++) {
-    let obj = cars[i];
-    if (obj.power > 300)console.log(obj)
-}
-*/
+ for (let i = 0; i < cars.length; i++) {
+ let obj = cars[i];
+ if (obj.power > 300)console.log(obj)
+ }
+ */
 
 // сили більше ніж 300 + виробник субару
 /*
-for (let i = 0; i < cars.length; i++) {
-    let obj = cars[i];
-    if (obj.power > 300 && obj.brand=="subaru")console.log(obj)
-}
+ for (let i = 0; i < cars.length; i++) {
+ let obj = cars[i];
+ if (obj.power > 300 && obj.brand=="subaru")console.log(obj)
+ }
 
-*/
+ */
 
 // мотор серіі ej
+/*
+
+ for (let i = 0; i < cars.length; i++) {
+ let obj = cars[i];
+ if (obj.engenModel == "ej20" || obj.engenModel == "ej204" || obj.engenModel == "ej204x")console.log(obj)}
+ */
+
+
 // сили більше ніж 300 + виробник субару + мотор серіі ej
+
+/*
+ for (let i = 0; i < cars.length; i++) {
+ let obj = cars[i];
+ if ((obj.engenModel == "ej20" || obj.engenModel == "ej204" || obj.engenModel == "ej204x") && (obj.power>300 && obj.brand=='subaru'))console.log(obj)}
+ */
+
+
 
 // двигун меньше 3х літрів + виробник мерседес
 /*
-for (let i = 0; i < cars.length; i++) {
-    let obj = cars[i];
-    if (obj.engenMas < 3 && obj.brand=="mercedes")console.log(obj)}
-*/
+ for (let i = 0; i < cars.length; i++) {
+ let obj = cars[i];
+ if (obj.engenMas < 3 && obj.brand=="mercedes")console.log(obj)}
+ */
 
 // двигун більше 2л + сили більше 250
 /*
-for (let i = 0; i < cars.length; i++) {
-    let obj = cars[i];
-    if (obj.engenMas > 2 && obj.power>=250) console.log(obj)}
-*/
+ for (let i = 0; i < cars.length; i++) {
+ let obj = cars[i];
+ if (obj.engenMas > 2 && obj.power>=250) console.log(obj)}
+ */
 
 
 // сили більше 250  + виробник бмв
 /*for (let i = 0; i < cars.length; i++) {
-    let obj = cars[i];
-    if (obj.brand=='bmw' && obj.power>=250) console.log(obj)}*/
+ let obj = cars[i];
+ if (obj.brand=='bmw' && obj.power>=250) console.log(obj)}*/
+
+// Сортування
 
 
+// Yaer
+/*
+cars.sort(function (x1,x2) {
+    if (x1.year < x2.year) return -1;
+    if (x1.year > x2.year) return 1;
+});
+
+console.log(cars);
+*/
+
+// mas
+/*
+cars.sort(function (x1,x2) {
+    if (x1.engenMas < x2.engenMas) return -1;
+    if (x1.engenMas > x2.engenMas) return 1;
+});
+
+console.log(cars);
+*/
+
+// HP
+
+/*
+cars.sort(function (x1,x2) {
+    if (x1.power < x2.power) return -1;
+    if (x1.power > x2.power) return 1;
+});
+
+console.log(cars);
+*/
+
+// Brand
+/*
+ cars.sort(function (x1,x2) {
+ if (x1.brand < x2.brand) return -1;
+ if (x1.brand > x2.brand) return 1;
+ });
+ console.log(cars);
+*/
 
 
+// model
+/*
+cars.sort(function (x1,x2) {
+    if (x1.model < x2.model) return -1;
+    if (x1.model > x2.model) return 1;
+});
+console.log(cars);
+*/
 
 
+// color
+/*cars.sort(function (x1,x2) {
+    if (x1.color < x2.color) return -1;
+    if (x1.color > x2.color) return 1;
+});
+console.log(cars);*/
 
+
+// type
+/*
+cars.sort(function (x1,x2) {
+ if (x1.type < x2.type) return -1;
+ if (x1.type > x2.type) return 1;
+ });
+ console.log(cars);
+*/
+
+// engen model
+/*
+ cars.sort(function (x1,x2) {
+ if (x1.engenModel < x2.engenModel) return -1;
+ if (x1.engenModel > x2.engenModel) return 1;
+ });
+ console.log(cars);
+*/
 
 
 
