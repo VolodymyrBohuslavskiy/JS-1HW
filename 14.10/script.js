@@ -355,15 +355,14 @@ cars.sort(function (x1,x2) {
  console.log(cars);
 */
 
+/*
 
 
-
-
-
-
-
-
-
+for (let i = 0; i < cars.length; i++) {
+    let obj = cars[i];
+    console.log(obj.engenModel.indexOf('ej') === 0);
+}
+*/
 
 
 
