@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Do not enter: drug, bug, rat !</p>
+<input type="text" name="Yor word" id="w1234">
+
+
+<script>
+    let bad=['drug','bug','rat'];
+let word=document.getElementById('w1234');
+word.oninput=function () {
+//    console.log(this.value);
+    for (let obj of bad) {
+        if (obj===this.value){alert('Hold on !')}
+    }
+};
+
+</script>
+</body>
+</html>
