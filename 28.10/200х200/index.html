@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>#block{
+        height: 200px;
+        width: 200px;
+        background: #8c0008;
+        margin: 10px;
+    }
+        body{background: #8a8a8a}
+    </style>
+</head>
+<body>
+
+<div id="block"></div>
+<input type="range"  id="ran" max="600" min="200" value="200" onchange="Size()">
+
+<script>
+   function Size() {
+       let ran= document.getElementById('ran'),
+           size=ran.value,
+           block = document.getElementById('block');
+       block.style.height=size+'px';
+       block.style.width=size+'px';
+   }
+</script>
+</body>
+</html>

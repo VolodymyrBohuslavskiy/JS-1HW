@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .menu ul {
+            display: none;
+        }
+
+        .menu.open ul {
+            display: block;
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="sweeties" class="menu">
+    <span class="title">Меню</span>
+    <ul>
+        <li>Пункт 1</li>
+        <li>Пункт 2</li>
+        <li>Пункт 3</li>
+        <li>Пункт 4</li>
+        <li>Пункт 5</li>
+    </ul>
+
+</div>
+
+<script>
+    let Menu = document.getElementById('sweeties');
+    let element = Menu.querySelector('.title');
+
+    element.onclick = function () {
+        Menu.classList.toggle('open');
+    };
+</script>
+
+</body>
+</html>
